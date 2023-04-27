@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+button {
+  background: transparent;
+  border: none;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+textarea {
+  border: none;
+  resize: none;
+}
+textarea,
+input {
+  -moz-appearance: none;
+  outline: 0px none transparent;
+  border: none;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 1.6rem;
+}
+#calendar {
+  margin: 2rem auto;
+   box-shadow: 0px 0px 5px rgb(193, 222, 222);
+   border-radius: 12px;
+  width: 20vw;
+  position: relative;
+  overflow: hidden;
+}
+#date {
+  margin: 1rem auto 0;
+  width: 90%;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+  position: absolute;
+  top: 8px;
+  right: 10px;
+}
+.button {
+  color: rgb(193, 222, 222);
+}
+.button:hover {
+  cursor: pointer;
+  color: rgb(104, 200, 200);
+}
+#prev {
+  position: absolute;
+  top: 2px;
+  right: 25px;
+  transform: rotate(180deg);
+}
+.daysName {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 3rem;
+  background-color: rgb(193, 222, 222);
+  padding: 0.2rem 2rem;
+}
+#days {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: start;
+  padding: 2rem 1.2rem;
+}
+.day {
+  width: 3rem;
+  text-align: center;
+}
+.today {
+  background-color: rgb(193, 222, 222);
+}
