@@ -7,18 +7,18 @@ let deferentMonth = 0,
   nextEl = document.getElementById("next"),
   daysEl = document.getElementById("days");
 const months = [
-  "Январь",
-  "Февраль",
-  "Март",
-  "Апрель",
-  "Май",
-  "Июнь",
-  "Июль",
-  "Август",
-  "Сентябрь",
-  "Октябрь",
-  "Ноябрь",
-  "Декабрь ",
+  "Января",
+  "Февраля",
+  "Марта",
+  "Апреля",
+  "Мая",
+  "Июня",
+  "Июля",
+  "Августа",
+  "Сентября",
+  "Октября",
+  "Ноября",
+  "Декабря",
 ];
 let weekDays = ["Пн.", "Вт.", "Ср.", "Чт.", "Пт.", "Сб.", "Вс."];
 //функция генерации календаря
@@ -47,7 +47,7 @@ const printDate = (day, d, year)=>{
 //      date.textContent =( day?day : '' )+ " " + item + " " + year;
 //    }
 //  });
- date.textContent = (day ? day : "") + months[d.getMonth()] + " " + year;
+ date.textContent = (day ? day : "")+' ' + months[d.getMonth()] + " " + year;
 }
 //функция создания календаря
 const create = ()=>{
